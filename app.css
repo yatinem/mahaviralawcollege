@@ -1,0 +1,105 @@
+/* General Body Styling */
+body {
+  background-color: #f4f7f6;
+  font-family: 'Nunito', sans-serif; /* Professional Font */
+  line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #234b7d;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#navbarNav {
+  font-size: 1.1rem;
+}
+
+#navbarNav .nav-link {
+  color: #e4e5e8;
+}
+
+#navbarNav .nav-link:hover {
+  color: #ffffff;
+}
+
+/* Carousel Image Styling */
+.carousel-item img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+/* Alumni Section Styling */
+#alumni {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.alumni-img {
+  width: 100%;
+  height: 300px; /* Equal height for all images */
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Equal Height for Alumni Member Cards */
+.card {
+  border-radius: 10px;
+  height: 100%; /* Ensures cards fill the available height */
+}
+
+.card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Hover Effect for Alumni Cards */
+.card:hover .alumni-img {
+  transform: scale(1.05);
+}
+
+.card-body h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.card-body p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.card-body .btn {
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 400px;
+  }
+
+  .alumni-img {
+    height: 250px;
+  }
+
+  .col-md-4 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 250px;
+  }
+
+  .alumni-img {
+    height: 200px;
+  }
+}
